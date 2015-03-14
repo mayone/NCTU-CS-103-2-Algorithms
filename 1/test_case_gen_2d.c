@@ -35,7 +35,6 @@ int main(int argc, char const *argv[])
 	// assign value
 	x = n*n;
 	i = j = 0;
-	///*
 	while(x > 0) {
 		mat[i][j] = x--;
 		switch(dir) {
@@ -77,13 +76,12 @@ int main(int argc, char const *argv[])
 				break;
 		}
 	}
-	//*/
 
 	// output matrix
 	printf("%d\n", n);
 	for(i = 0; i < n; i++) {
 		for(j = 0; j < n; j++) {
-			printf("%l3d ", mat[i][j]);
+			printf("%3d ", mat[i][j]);
 		}
 		printf("\n");
 	}
